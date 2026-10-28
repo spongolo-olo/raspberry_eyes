@@ -1,0 +1,15 @@
+[Unit]
+Description=Raspberry Eyes Dual Camera and Sense HAT Service
+After=network.target lightdm.service
+
+[Service]
+Type=simple
+User=agent
+Environment=DISPLAY=:0
+WorkingDirectory=/home/agent/.gemini/antigravity-cli/scratch/raspberry_eyes
+ExecStart=/home/agent/.gemini/antigravity-cli/scratch/raspberry_eyes/bin/raspberry-eyes
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

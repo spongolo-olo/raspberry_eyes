@@ -1,0 +1,7 @@
+# System packages on Raspberry Pi OS Bookworm / Trixie:
+# sudo apt install python3-picamera2 python3-opencv python3-pyqt5 python3-sense-hat
+opencv-python-headless
+numpy
+PyQt5
+picamera2
+sense-hat
